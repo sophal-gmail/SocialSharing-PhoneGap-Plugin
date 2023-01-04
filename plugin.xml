@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-x-socialsharing"
-        version="5.6.8">
+  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-x-socialsharing" version="5.6.8">
 
   <name>SocialSharing</name>
 
@@ -72,7 +70,7 @@
 
 
     <config-file target="AndroidManifest.xml" parent="/*/application">
-      <receiver android:name="nl.xservices.plugins.ShareChooserPendingIntent" android:enabled="true">
+      <receiver android:name="nl.xservices.plugins.ShareChooserPendingIntent" android:enabled="true" android:exported="true">
         <intent-filter>
           <action android:name="android.intent.action.SEND"/>
         </intent-filter>
